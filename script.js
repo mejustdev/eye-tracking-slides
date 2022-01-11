@@ -1,8 +1,8 @@
 window.saveDataAcrossSessions = true
 
-const LOOK_DELAY = 1000 // 1 second
-const LEFT_CUTOFF = window.innerWidth / 4
-const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4
+const LOOK_DELAY = 500 // 1 second
+const LEFT_CUTOFF = window.innerWidth / 3
+const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 3
 
 let startLookTime = Number.POSITIVE_INFINITY
 let lookDirection = null
@@ -52,7 +52,7 @@ webgazer
   })
   .begin()
 
-webgazer.showVideoPreview(false).showPredictionPoints(false)
+// webgazer.showVideoPreview(false).showPredictionPoints(false)
 
 function getNewImage(next = false) {
   const img = document.createElement("img")
